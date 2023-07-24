@@ -1,9 +1,10 @@
 import sys
+import os
 import argparse
 from urllib.parse import urlparse
 from requests import post
 
-
+os.system('clear')
 banner = r"""
 
     ____           __  __                __          
@@ -14,7 +15,7 @@ banner = r"""
                            /____/                    
 
 """
-print('THE_TOOL_BY_BO_HAYDAR')
+print('\033[4m THE_TOOL_BY_BO_HAYDAR')
 def Shortner(big_url: str) -> str:
     """
     Function short the big urls to short
@@ -56,9 +57,9 @@ if __name__ == "__main__":
 
     if len(sys.argv) == 1:
         print("\n")
-        target = input("Enter the link : ")
-        mask = input("Enter the link mask: ")
-        keyword = input("Enter the ENTER in the keyboard : ")
+        target = input("\033[5m Enter the link : ")
+        mask = input("\033[5m Enter the link mask: ")
+        keyword = input("\033[5m Enter the ENTER in the keyboard : ")
         print("\n")
     else:
         args = parser.parse_args()
