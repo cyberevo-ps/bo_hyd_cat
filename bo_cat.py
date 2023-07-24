@@ -5,17 +5,25 @@ from urllib.parse import urlparse
 from requests import post
 
 os.system('clear')
+banner2 ="""
+         ___________________________________________
+        |Youtube:https://youtube.com/@BO_HAYDAR_HK  |
+        |Tele:https://t.me/txrtm                    |
+        |Tele Team:https://t.me/+EHo65POl1yA2ZjA0   |
+        |___________________________________________|
+"""
+banner3 ='   THE TOOL BY BO HAYDAR FOR CAT LINK FOR THE PHISHING'
+
+
 banner = r"""
 
-    ____           __  __                __          
-   / __ )____     / / / /___ ___  ______/ /___ ______
-  / __  / __ \   / /_/ / __ `/ / / / __  / __ `/ ___/
- / /_/ / /_/ /  / __  / /_/ / /_/ / /_/ / /_/ / /    
-/_____/\____/  /_/ /_/\__,_/\__, /\__,_/\__,_/_/     
-                           /____/                    
-
+     ___        _  _              _             ___      _
+    | _ ) ___  | || |__ _ _  _ __| |__ _ _ _   / __|__ _| |_
+    | _ \/ _ \ | __ / _` | || / _` / _` | '_| | (__/ _` |  _|
+    |___/\___/ |_||_\__,_|\_, \__,_\__,_|_|    \___\__,_|\__|
+                          |__/
 """
-print('\033[4m THE_TOOL_BY_BO_HAYDAR')
+
 def Shortner(big_url: str) -> str:
     """
     Function short the big urls to short
@@ -53,13 +61,15 @@ if __name__ == "__main__":
         required=True,
     )
 
-    print(f"\033[91m {banner}\033[00m")
+    print(f"\033[1;35m {banner}\033[1;33m")
+    print(f"\033[1;36m {banner2}\033[1;36m")
+    print(f"\033[1;32m {banner3}\033[1;32m")
 
     if len(sys.argv) == 1:
         print("\n")
-        target = input("\033[5m Enter the link : ")
-        mask = input("\033[5m Enter the link mask: ")
-        keyword = input("\033[5m Enter the ENTER in the keyboard : ")
+        target = input("\033[1;33m [+] Enter the link =====>  : ")
+        mask = input("\033[1;33m [+] Enter the link mask ====>  : ")
+        keyword = input("\033[1;33m [+] Enter the ENTER in the keyboard ==> : ")
         print("\n")
     else:
         args = parser.parse_args()
@@ -67,4 +77,4 @@ if __name__ == "__main__":
         mask = args.mask
         keyword = args.keywords
 
-    print(f"\033[91m {MaskUrl(target, mask, keyword)}\033[00m")
+    print(f"\033[1;35m the link ==>\033[0;32m  {MaskUrl(target, mask, keyword)} \033[1;35m")
